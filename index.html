@@ -1,3 +1,16 @@
+<!-- Portfolio Website 
+    Author: Waleed Ali Sarwar
+    Description: A professional portfolio website showcasing my work as a fullstack web developer
+    Date Created: January 2024
+    Last Modified: January 2024
+    Features:
+    - Responsive design
+    - Portfolio showcase
+    - Contact information
+    - Services offered
+    - About section
+    - Social media links
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +24,15 @@
     <meta property="og:title" content="Waleed Ali Sarwar - Fullstack Web Developer">
     <meta property="og:description" content="Portfolio of Waleed Ali Sarwar, a fullstack web developer with expertise in web design and development">
     <meta property="og:image" content="images/profile.jpg">
-    <title>Frontend developer portfolio website</title>
+    <title>Waleed Ali Sarwar | Fullstack Web Developer & Designer</title>
+    <!-- Add responsive CSS media queries in styles.css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Add JavaScript file for interactivity -->
+    <script src="script.js" defer></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>  
@@ -62,7 +82,7 @@
         </div>
 
     </section>
-
+    
     <section id="services">
         <div class="services container">
             <h1 class="section-title">Services</h1>
@@ -123,20 +143,20 @@
         </div>
 
     </section>
-
+ 
     <section id="contact">
         <div class="contact container">
             <h1 class="section-title">Contact</h1>
             <div class="contact-items">
                 <div class="contact-item">
-                    <div class="icon"><img src="images/phone.png" alt="phone"></div>
+                    <div class="icon"><i class="fas fa-phone"></i></div>
                     <div class="contact-info">
                         <h1>Phone</h1>
                         <h2>+92 334-7493423</h2>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="icon"><img src="images/email.png" alt="email"></div>
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
                     <div class="contact-info">
                         <h1>Email</h1>
                         <h2>
@@ -145,7 +165,7 @@
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="icon"><img src="images/location.png" alt="location"></div>
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="contact-info">
                         <h1>Location</h1>
                         <h2>Pakistan</h2>
@@ -154,7 +174,19 @@
             </div>
         </div>
     </section>
-
+    
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Waleed Ali Sarwar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
