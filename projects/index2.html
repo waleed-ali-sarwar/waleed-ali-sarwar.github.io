@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Dominaa Pizza</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var d = document.getElementById('btn');
+            d.addEventListener('click', function () {
+                alert('Bas itnaa he tha Mazak koi free nahi hai!');
+            });
+        });
+    </script>
+    <style>
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            margin: 0px;
+            background-color: rgb(0, 135, 197);
+            color: white;
+        }
+
+        marquee {
+            font-size: 23px;
+        }
+
+        /* Section */
+        section {
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            height: 10%;
+            margin-top: 25px;
+            border-radius: 10px;
+            background-color: #f39c12;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* Slider */
+        .img-slider {
+            background: url('img3.jpg') 100% no-repeat;
+            background-position: center;
+            height: 75vh;
+            background-size: cover;
+        }
+
+        /* Product Section */
+        .section-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+            width: 100%;
+        }
+
+        .product-card {
+            border: 1px solid #262626;
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+            -webkit-user-drag: none;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .product-card {
+                width: 220px;
+                height: 300px;
+            }
+
+            .img-slider {
+                height: 60vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                width: 180px;
+                height: 250px;
+            }
+
+            .section-products {
+                justify-content: center;
+            }
+
+            .img-slider {
+                height: 50vh;
+            }
+
+            button {
+                height: 8%;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                text-align: center;
+                padding: 15px;
+            }
+
+            marquee {
+                font-size: 18px;
+            }
+
+            .product-card {
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+
+            .img-slider {
+                height: 40vh;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            footer p {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <h2>
+                    Q-Dominaa Pizza
+                </h2>
+            </div>
+            <ul style="display: flex; justify-content: flex-end; list-style: none;">
+                <li style="margin-left: 20px;"><a href="#">Account</a></li>
+                <li><a href="#">My Cart</a></li>
+            </ul>
+        </nav>
+        <marquee behavior="slide" direction="right" loop="1000"> Buy One Get Two Free Sale - 2025</marquee>
+    </header>
+    <section class="slider">
+        <div class="img-slider"></div>
+    </section>
+
+    <h2>Langoori Deal</h2>
+    <section class="section-products">
+        <!-- Product Cards -->
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+    </section>
+
+    <h2>Awee Deal</h2>
+    <section class="section-products">
+        <!-- Product Cards -->
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+        <div class="product-card">
+            <img src="./img2.jpg" alt="deal">
+            <div class="card-title">Wachy Machy Dress Collection</div>
+            <p>This pizza has 100% double Crust</p>
+            <button>Add</button>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Q-Dominaa Pizza developed by waleed ali sarwar</h2>
+        <p>If your order is delivered by rider or any focal dominaa representative claim its free so it true your pizza is free but you need play a game for free pizza click this <a href="#" id="btn">button</a></p>
+        <p>All rights are  reversed @2025</p>
+    </footer>
+
+</body>
+
+</html>
