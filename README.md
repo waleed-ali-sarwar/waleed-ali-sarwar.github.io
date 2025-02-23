@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a project based on the Microsoft Assessment.
+This is a project based on the Microsoft Assessment / Microsoft Frontend developer Professional Certificate.
 
 ## Features
 
@@ -25,6 +25,11 @@ This is a project based on the Microsoft Assessment.
    cd portfolio-website
    ```
 3. Open `index.html` in your browser to view the website.
+
+## Live Demo
+
+Check out the live demo [here](https://waleed-programminghub.github.io/portfolio-website/).
+
 
 ## License
 

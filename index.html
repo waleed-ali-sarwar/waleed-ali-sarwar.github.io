@@ -11,20 +11,39 @@
     - About section
     - Social media links
 -->
+<style>
+    .animate__animated {
+        visibility: hidden;
+    }
 
+    .animate__animated.animate__fadeIn {
+        visibility: visible;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.add('animate__animated', 'animate__fadeIn');
+        });
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Waleed Ali Sarwar - Fullstack Web Developer Portfolio. Experienced in web design, development and SEO with 3 years of experience.">
+    <meta name="description"
+        content="Waleed Ali Sarwar - Fullstack Web Developer Portfolio. Experienced in web design, development and SEO with 3 years of experience.">
     <meta name="keywords" content="web developer, fullstack developer, frontend developer, web design, SEO, Pakistan">
     <meta name="author" content="Waleed Ali Sarwar">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Waleed Ali Sarwar - Fullstack Web Developer">
-    <meta property="og:description" content="Portfolio of Waleed Ali Sarwar, a fullstack web developer with expertise in web design and development">
-    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:description"
+        content="Portfolio of Waleed Ali Sarwar, a fullstack web developer with expertise in web design and development">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta property="og:url" content="https://waleed-programminghub.github.io/portfolio-website/">
     <title>Waleed Ali Sarwar | Fullstack Web Developer & Designer</title>
     <!-- Add responsive CSS media queries in styles.css -->
     <link rel="stylesheet" href="styles.css">
@@ -36,14 +55,14 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body>  
+<body>
 
     <header>
         <nav>
             <div class="logo">
                 <h4>Waleed Ali Sarwar</h4>
             </div>
-           
+
             <div class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -55,7 +74,7 @@
             </div>
         </nav>
     </header>
-    
+
     <section id="home">
         <div class="home container">
             <div>
@@ -71,16 +90,17 @@
         <div class="about container">
             <div class="col-left">
                 <div class="about-img">
-                    <img src="images/profile.jpg" alt="img">
+                    <img src="assets/profile.jpg" alt="img">
                 </div>
             </div>
             <div class="col-right">
                 <h1 class="section-title">About <span>me</span></h1>
                 <h2>Fullstack web developer</h2>
-                <p>Fullstack web developer with 3 years of experience in designing and developing user interfaces, testing,
+                <p>Fullstack web developer with 3 years of experience in designing and developing user interfaces,
+                    testing,
                     debugging, and training staff within eCommerce technologies. Proven ability in optimizing web
                     functionality that improve data retrieval and workflow efficiencies.</p>
-                <a href="https://www.linkedin.com/in/abhishek-kumar-7b7b3b1b1/" target="_blank" class="cta">View
+                <a href="https://www.linkedin.com/in/waleed-ali-sarwar/" target="_blank" class="cta">View
                     LinkedIn Profile</a>
             </div>
         </div>
@@ -116,38 +136,47 @@
             <h1 class="section-title">Portfolio</h1>
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="images/portfolio-1.jpg" alt="img">
+                    <img src="assets/project.png" alt="Rental Management System">
                 </div>
                 <div class="portfolio-description">
-                    <h2>Project 1</h2>
-                    <p>Project description goes here. Project description goes here. Project description goes here.
-                        Project description goes here. Project description goes here.</p>
+                    <h2>Rental Management System</h2>
+                    <p>ASP.NET Core 8, ADO.NET, SQL Server<br>
+                        Web application for managing property rentals efficiently, featuring full CRUD operations using
+                        ADO.NET and SQL Server, ItextLibrary. UI is designed with Bootstrap and JavaScript hosted on
+                        Azure.</p>
+                    <a href="https://rtms-was.azurewebsites.net" target="_blank" class="cta">Live Demo</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="images/portfolio-2.jpg" alt="img">
+                    <img src="assets/project.png" alt="CV Maker Website">
                 </div>
                 <div class="portfolio-description">
-                    <h2>Project 2</h2>
-                    <p>Project description goes here. Project description goes here. Project description goes here.
-                        Project description goes here. Project description goes here.</p>
+                    <h2>CV Maker Website</h2>
+                    <p>React.js, JavaScript<br>
+                        A dynamic CV maker website built with React.js and JavaScript, allowing users to create and
+                        download professional CVs. The website features a user-friendly interface and responsive design.
+                    </p>
+                    <a href="https://kind-flower-03a1ada00.4.azurestaticapps.net/" target="_blank" class="cta">Live
+                        Demo</a>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="images/portfolio-3.jpg" alt="img">
+                    <img src="assets/project.png" alt="Movies Website">
                 </div>
                 <div class="portfolio-description">
-                    <h2>Project 3</h2>
-                    <p>Project description goes here. Project description goes here. Project description goes here.
-                        Project description goes here. Project description goes here.</p>
+                    <h2>Movies Website</h2>
+                    <p>ASP.NET Core 8, Entity Framework Core, SQL Server<br>
+                        Dynamic movies listing platform featuring CRUD operations for movie management. Built using
+                        ASP.NET Core 8 and Entity Framework Core for database handling with SQL Server.</p>
+                    <a href="https://moviesmvccore.azurewebsites.net" target="_blank" class="cta cta">Live Demo</a>
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
- 
+
     <section id="contact">
         <div class="contact container">
             <h1 class="section-title">Contact</h1>
@@ -178,7 +207,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
         <div class="footer-container">
             <div class="social-links">
