@@ -1,36 +1,45 @@
-# Portfolio Website
+# Welcome to My GitHub Profile! 👋  
 
-This is a project based on the Microsoft Assessment / Microsoft Frontend developer Professional Certificate.
+## About Me  
 
-## Features
+Hi there! I'm **Waleed Ali Sarwar**, a passionate **Bioinformatics** student and a dedicated **.NET Full Stack Developer**. I love exploring the intersections of **biology and technology** and developing innovative software solutions.  
 
-- Responsive design
-- Modern UI/UX
-- Interactive elements
+## Education & Interests  
 
-## Technologies Used
+- 🎓 **Bioinformatics Student** | Virtual University of Pakistan  
+- 💻 **.NET Full Stack Developer** | Passionate about building robust and scalable applications  
 
-- HTML
-- CSS
-- JavaScript
+## Skills & Technologies  
 
-## Installation
+### **Bioinformatics**  
+- 🧬 Genomic Data Analysis  
+- 🧫 Molecular Modeling  
+- 🗄️ Proteomics  
+- 🔬 Bioinformatics Tools: BLAST, ClustalW, etc.  
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Waleed-programmingHUB/portfolio-website/
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio-website
-   ```
-3. Open `index.html` in your browser to view the website.
+### **Full Stack Development**  
+- 🌐 **Frontend**: HTML, CSS, JavaScript, React.js, Blazor
+- ⚙️ **Backend**: C#, ASP.NET Core, Node.js,Php, Python  
+- 🗄️ **Databases**: SQL Server, MySQL  
+- 🛠️ **Tools & Platforms**: Git, GitHub, Azure  
 
-## Live Demo
+## Projects  
 
-Check out the live demo [here](https://waleed-programminghub.github.io/portfolio-website/).
+### **.NET Full Stack Projects**  
+- 🚀 **[Rental Management System](https://rtms-was.azurewebsites.net)** | ASP.NET Core 8, ADO.NET, SQL Server  
+  - A web application for managing property rentals with CRUD operations, built using ADO.NET and SQL Server, and designed with Bootstrap & JavaScript.  
 
+- 🌍 **[Movies Website](https://moviesmvccore.azurewebsites.net)** | ASP.NET Core 8, Entity Framework Core, SQL Server  
+  - A dynamic movies listing platform with CRUD operations, utilizing Entity Framework Core for seamless database handling.  
 
-## License
+- 🎨 **[Portfolio Website](https://delightful-sand-0b6dd2300.4.azurestaticapps.net)** | React.js, TypeScript  
+  - A responsive portfolio website showcasing my skills and projects, optimized for mobile and desktop users.  
 
-This project is licensed under the MIT License.
+## Get In Touch  
+
+- 📧 **Email**: [waleed.alisarwar336@outlook.com](mailto:waleed.alisarwar336@outlook.com)  
+- 🌐 **LinkedIn**: [Waleed Ali Sarwar](https://linkedin.com/in/waleed-ali-sarwar)  
+
+## Contributions & Collaborations  
+
+I'm always open to collaborating on exciting projects, contributing to open source, and learning from the developer community. Let's connect and build something amazing! 🚀  
