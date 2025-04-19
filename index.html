@@ -2,681 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title content="Waleed Ali Sarwar | Fullstack Web Developer & Bioinformatics Student | Portfolio">
-        Waleed Ali Sarwar | Fullstack Web Developer & Bioinformatics Student | Portfolio</title>
-    <meta name="keywords" content="Waleed Ali Sarwar, Web Developer, Bioinformatics, Rawalpindi, Pakistan">
-    <meta name="description"
-        content="Waleed Ali Sarwar is a Fullstack Web Developer and Bioinformatics Student based in Rawalpindi, Pakistan.">
-    <meta name="keywords"
-        content="Waleed Ali Sarwar, Fullstack Web Developer, Bioinformatics Student, Rawalpindi, Pakistan, Web Development, Bioinformatics, Portfolio">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call to Action</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column; /* Adjusts on smaller screens */
+}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" />
-    <!-- PDF.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-    <script src="script.js"></script>
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures items wrap to the next line for smaller screens */
+    justify-content: center; /* Centers the items on smaller screens */
+}
 
+.box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0073e6;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%; /* Ensures boxes fit nicely on smaller screens */
+    }
+
+    body {
+        height: auto; /* Allows better scrolling on mobile */
+        padding: 20px; /* Adds some padding for better aesthetics */
+    }
+
+    .footer {
+        position: relative; /* Footer adjusts based on content */
+    }
+}
+
+    </style>
 </head>
 
 <body>
-    <nav class="sticky-top was-bg-secondary navbar navbar-expand-lg bg-body-tertiary navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Waleed Ali Sarwar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex justify-content-end w-100">
-                    <li class="nav-item">
-                        <a class="nav-link was-btn-outline-primary" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link was-btn-outline-primary" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link was-btn-outline-primary" href="#Services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link was-btn-outline-primary" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link was-btn-outline-primary" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container">
+        <div class="box">
+            <img src="/assets/upwork.png" alt="Upwork Logo" class="logo">
+            <p>Would you like to visit my profile?</p>
+            <a href="https://www.upwork.com/freelancers/waleeda114" target="_blank" class="button">Visit Upwork</a>
         </div>
-    </nav>
-    <!-- Home Section -->
-    <section id="Home">
-        <div class="d-flex justify-content-center align-items-center vh-100">
-            <div class="p-5">
-                <h2 class="was-h2 fw-bold display-1">Hi, I'm Waleed,<br />
-                    Welcome to my Portfolio</h2>
-                <h1 id="te" class="was-h1 display-3"></h1>
-                <a href="cv/cv.pdf" class="btn btn-lg was-download-cv my-2" download>Download CV</a>
-            </div>
-        </div>
-    </section>
-    <!-- Home Section -->
-    <!-- About Section -->
-    <section id="About" class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <img src="assets/profile.png" alt="Profile Image" class="img-fluid was-img-p mb-4">
-                    <h2 class="mb-4">About Me</h2>
-                    <p class="lead">
-                        I am an aspiring full-stack web developer with a strong foundation in database management,
-                        MVC frameworks, and front-end technologies. Passionate about leveraging technology to solve
-                        complex problems, I continuously enhance my skills in web development, data science, and
-                        innovative solutions. My expertise spans software development, UI/UX optimization, and
-                        performance-driven applications.
-                    </p>
-                    <a href="https://www.linkedin.com/in/waleed-ali-sarwar" class="btn was-linkedin mt-3"
-                        target="_blank">
-                        Connect on LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-
-    <!-- Education Section -->
-    <section id="Education" class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="mb-4">My Education</h2>
-                    <div class="divider mx-auto mb-5"></div>
-                    <p class="lead text-muted mb-5">My academic journey and qualifications</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <!-- Education Item 1 -->
-                    <div class="card mb-4 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-3 mb-3 mb-md-0">
-                                    <h5 class="fw-bold text-muted">2022 - Present</h5>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="fw-bold">Bachelor of Science in Bioinformatics</h4>
-                                    <h5 class="text-primary mb-3">Virtual University Of Pakistan</h5>
-                                    <p>Focusing on software development, algorithms, databases, and bioinformatics.
-                                        Participating in research projects related to genomic data analysis and
-                                        computational biology.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Education Item 2 -->
-                    <div class="card mb-4 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-3 mb-3 mb-md-0">
-                                    <h5 class="fw-bold text-muted">2019 - 2021</h5>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="fw-bold">ICS</h4>
-                                    <h5 class="text-primary mb-3">Government Shahbaz Shareef Assoicate College</h5>
-                                    <p>Completed Intermediate in Computer Science (ICS) from Rawalpindi Board with
-                                        courses in General Science, Statistics, Mathematics, and Computer Science.
-                                        Acquired strong foundation in programming fundamentals and analytical skills.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Education Item 3 -->
-                    <div class="card mb-4 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <div class="row">
-                                <div class="col-md-3 mb-3 mb-md-0">
-                                    <h5 class="fw-bold text-muted">2017 - 2018</h5>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="fw-bold">Matriculation</h4>
-                                    <h5 class="text-primary mb-3">Al-Siddeeq Model High School for boys Rawalpindi</h5>
-                                    <p>Completed Science Group curriculum with courses in Physics, Chemistry,
-                                        Mathematics, and Computer Science from Rawalpindi Board. Developed strong
-                                        analytical and problem-solving skills through practical work and theoretical
-                                        studies.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Education Section -->
-    <!-- Certification Section -->
-    <section id="Certifications" class="py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="mb-4">My Certifications</h2>
-                    <div class="divider mx-auto mb-5"></div>
-                    <p class="lead text-muted mb-5">Professional qualifications and achievements</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Certification Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold">Introduction to Web Development</h4>
-                            <h6 class="text-primary mb-3">Microsoft (Coursera)</h6>
-                            <p class="mb-1"><small>Completed February 23, 2025</small></p>
-                            <p class="mb-2">38 hours course with 96.20% grade. Skills: HTML, CSS, JavaScript, Web
-                                Development, Microsoft Copilot.</p>
-                            <button class="btn btn-sm btn-primary view-cert" data-bs-toggle="modal"
-                                data-bs-target="#pdfModal" data-cert="https://raw.githubusercontent.com/waleed-ali-sarwar/portfolio-website/main/certifications/Coursera_Intro_web.pdf">View
-                                Certificate</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certification Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold">How To Edit Viral Shorts In CapCut</h4>
-                            <h6 class="text-primary mb-3">Udemy</h6>
-                            <p class="mb-1"><small>Completed January 9, 2024</small></p>
-                            <p class="mb-3">1.5-hour course covering techniques for editing viral short-form videos
-                                using CapCut editor (12 lectures).</p>
-                            <button class="btn btn-sm btn-primary view-cert" data-bs-toggle="modal"
-                                data-bs-target="#pdfModal" data-cert="https://raw.githubusercontent.com/waleed-ali-sarwar/portfolio-website/main/certifications/Udemy_capcut.pdf">View
-                                Certificate</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Certification Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold">.NET FullStack Developer Specialization</h4>
-                            <h6 class="text-primary mb-3">Board Infinity</h6>
-                            <p class="mb-1"><small>Completed May 23, 2024</small></p>
-                            <p class="mb-3">Comprehensive training in .NET Core, React, ASP.NET, MVC patterns, RESTful
-                                APIs, and full-stack web application development.</p>
-                            <button class="btn btn-sm btn-primary view-cert" data-bs-toggle="modal"
-                                data-bs-target="#pdfModal" data-cert="https://raw.githubusercontent.com/waleed-ali-sarwar/portfolio-website/main/certifications/Coursera_dotnet.pdf">View
-                                Certificate</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certification Item 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold">New Horizons in Genome Editing</h4>
-                            <h6 class="text-primary mb-3">Virtual University of Pakistan</h6>
-                            <p class="mb-1"><small>Attended Nov 2024</small></p>
-                            <p class="mb-3">One-day symposium featuring Chinese delegation from Wuhan University,
-                                exploring
-                                advancements in genome editing technologies and fostering international collaboration.
-                            </p>
-                            <button class="btn btn-sm btn-primary view-cert" data-bs-toggle="modal"
-                                data-bs-target="#pdfModal" data-cert="https://raw.githubusercontent.com/waleed-ali-sarwar/portfolio-website/main/certifications/VU_Certificate.pdf">View
-                                Certificate</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- PDF Viewer Modal -->
-    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="pdfModalLabel">Certificate</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="pdfViewer"></div>
-                </div>
-            </div>
+        <div class="box">
+            <img src="/assets/portfolio.png" alt="Portfolio Icon" class="logo">
+            <p>Visit my Portfolio Website</p>
+            <a href="http://waleed-ali-sarwar.github.io/portfolio-website/home.html" target="_blank" class="button">Visit Portfolio</a>
         </div>
     </div>
-    <!-- Certification Section -->
-    <!-- Skills Section -->
-    <section id="Skills" class="py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="mb-4">My Skills</h2>
-                    <div class="divider mx-auto mb-5"></div>
-                    <p class="lead text-muted mb-5">Technical expertise and professional competencies</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Programming Languages -->
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Programming Languages</h4>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">HTML/CSS</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 95%"
-                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">JavaScript</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 90%"
-                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">C#</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 85%"
-                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">Python</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 80%"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frameworks & Technologies -->
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Frameworks & Technologies</h4>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">ASP.NET Core</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 90%"
-                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">React.js</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 85%"
-                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">SQL Server</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 80%"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span class="fw-bold">Azure Cloud Services</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar was-bg-primary" role="progressbar" style="width: 75%"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Skills -->
-                <div class="col-12 mt-4">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Additional Skills</h4>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary p-2">Responsive Design</span>
-                                <span class="badge bg-primary p-2">RESTful API Development</span>
-                                <span class="badge bg-primary p-2">Git & GitHub</span>
-                                <span class="badge bg-primary p-2">Unit Testing</span>
-                                <span class="badge bg-primary p-2">Agile/Scrum</span>
-                                <span class="badge bg-primary p-2">UI/UX Design</span>
-                                <span class="badge bg-primary p-2">Bioinformatics</span>
-                                <span class="badge bg-primary p-2">Database Design</span>
-                                <span class="badge bg-primary p-2">Entity Framework</span>
-                                <span class="badge bg-primary p-2">Bootstrap</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section -->
-
-    <!-- Project Section -->
-
-    <section id="Projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold position-relative">
-                <span class="position-relative">Projects</span>
-            </h2>
-
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title fw-bold mb-3">Rental Management System</h3>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">ASP.NET Core 8</span>
-                                <span class="badge bg-secondary me-1">ADO.NET</span>
-                                <span class="badge bg-info">SQL Server</span>
-                            </div>
-                            <p class="card-text flex-grow-1">Web application for managing property rentals efficiently,
-                                featuring full CRUD operations using ADO.NET and SQL Server, ItextLibrary.</p>
-                            <a href="https://rtms-was.azurewebsites.net" target="_blank"
-                                class="btn was-btn-p mt-auto">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title fw-bold mb-3">CV Maker Website</h3>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-1">React.js</span>
-                                <span class="badge bg-warning text-dark">JavaScript</span>
-                            </div>
-                            <p class="card-text flex-grow-1">A dynamic CV maker website built with React.js and
-                                JavaScript, allowing users to create and download professional CVs.</p>
-                            <a href="https://kind-flower-03a1ada00.4.azurestaticapps.net/" target="_blank"
-                                class="btn was-btn-p mt-auto">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title fw-bold mb-3">Movies Website</h3>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">ASP.NET Core 8</span>
-                                <span class="badge bg-success me-1">Entity Framework</span>
-                                <span class="badge bg-info">SQL Server</span>
-                            </div>
-                            <p class="card-text flex-grow-1">Dynamic movies listing platform featuring CRUD operations
-                                for movie management. Built using ASP.NET Core 8.</p>
-                            <a href="https://moviesmvccore.azurewebsites.net" target="_blank"
-                                class="btn was-btn-p mt-auto">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h3 class="card-title fw-bold mb-3">Q-Dominaa Pizza</h3>
-                            <div class="mb-3">
-                                <span class="badge bg-danger me-1">HTML</span>
-                                <span class="badge bg-primary me-1">CSS</span>
-                                <span class="badge bg-warning text-dark">JavaScript</span>
-                            </div>
-                            <p class="card-text flex-grow-1">Q-Dominaa is a modern pizza ordering website built with
-                                HTML, CSS, and JavaScript. It features a responsive design.</p>
-                            <a href="projects/index2.html" target="_blank" class="btn was-btn-p mt-auto">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Section -->
-
-    <!-- Services Section -->
-
-    <section id="Services" class="container py-5">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="fw-bold mb-3">Our Services</h2>
-                <div class="divider mx-auto mb-5"></div>
-                <p class="lead text-muted mb-5">We provide top-notch solutions tailored to your specific needs</p>
-            </div>
-        </div>
-
-        <div class="row g-4">
-            <!-- Service Card 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card  border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">Web Development</h4>
-                        <p class="card-text text-muted">Custom websites built with the latest technologies to provide
-                            seamless user experiences.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Card 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card  border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">Mobile Apps</h4>
-                        <p class="card-text text-muted">Native and cross-platform mobile applications designed for both
-                            iOS and Android platforms.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Card 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card  border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">Cloud Services</h4>
-                        <p class="card-text text-muted">Scalable cloud solutions that ensure your applications
-                            (Azure,Amazon,Hostiger) run
-                            smoothly and securely.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Card 4 ( Bioinformatics Data Analytics) -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card  border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">Bioinformatics Analytics</h4>
-                        <p class="card-text text-muted">Transform genomic and biological data into valuable insights
-                            using machine learning and statistical analysis.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Card 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card  border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">UI/UX Design</h4>
-                        <p class="card-text text-muted">Create stunning, intuitive interfaces that enhance user
-                            experience and engagement.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Card 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 service-card border-0 rounded-3">
-                    <div class="card-body p-4 text-center">
-                        <h4 class="card-title mb-3">Research Software</h4>
-                        <p class="card-text text-muted">Custom software solutions for genomic sequence analysis,
-                            molecular modeling, and biological data management.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section -->
-
-
-    <!-- Contact Section -->
-    <section id="Contact" class="py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="mb-4">Get In Touch</h2>
-                    <div class="divider mx-auto mb-5"></div>
-                    <p class="lead text-muted mb-5">Have a question or want to work together? Reach out to me</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="card border-0 h-100">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Contact Information</h4>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-geo-alt-fill me-3 text-primary fs-5"></i>
-                                <div>
-                                    <h6 class="mb-0">Location</h6>
-                                    <p class="mb-0">Rawalpindi, Pakistan</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-envelope-fill me-3 text-primary fs-5"></i>
-                                <div>
-                                    <h6 class="mb-0">Email</h6>
-                                    <p class="mb-0">waleed.alisarwar336@outlook.com</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <h6 class="mb-2">Follow Me</h6>
-                                <div class="d-flex gap-3">
-                                    <a href="https://github.com/waleed-ali-sarwar" target="_blank"
-                                        class="text-dark fs-5"><i class="bi bi-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/waleed-ali-sarwar" target="_blank"
-                                        class="text-primary fs-5"><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="card border-0">
-                        <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Send Message</h4>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" id="message" style="height: 150px"
-                                                placeholder="Your Message"></textarea>
-                                            <label for="message">Your Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn was-linkedin px-4 py-2">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="was-bg-primary text-white py-4 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h5 class="mb-0">Waleed Ali Sarwar</h5>
-                    <p class="mb-0">Fullstack Web Developer & Bioinformatics Student</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="d-flex justify-content-md-end gap-3 mb-3">
-                        <a href="https://github.com/waleed-ali-sarwar" target="_blank" class="text-white fs-5"><i
-                                class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/waleed-ali-sarwar" target="_blank"
-                            class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <p class="mb-0">&copy; 2024 Waleed Ali Sarwar. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
+    <footer class="footer">
+        <p>Designed by Waleed Ali Sarwar</p>
     </footer>
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
