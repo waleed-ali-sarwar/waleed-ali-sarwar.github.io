@@ -1,0 +1,243 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    background-image: url('./assets/bg_weather.png');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+/* Search Box in Header */
+.search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    background-color: #4c6faf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-box button:hover {
+    background-color: #025381;
+    color: white;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 20px 0px 20px 20px;
+    font-weight: lighter;
+}
+
+nav {
+    width: 10%;
+    height:auto;
+    background-color: #004883;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    padding: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.0rem;
+    display: block;
+    padding: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.bx-cloud {
+    font-size: 2rem;
+    color: #2d65ff;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.w-content {
+    padding-left: 10px;
+    height: 100%;
+}
+
+footer {
+    background-color: #2d65ff;
+    color: white;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+.w-row {
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 16px; /* Adds spacing between cards */
+}
+
+.w-card {
+    flex: 1 1 300px; /* Allows flexibility while maintaining a minimum width */
+    max-width: 200px; /* Prevents cards from stretching too wide */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#digital-clock {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #digital-clock {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Responsive blog */
+.w-blog-post {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.w-blog-post:hover {
+    transform: scale(1.05);
+}
+
+.w-blog-post img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Photos page Style */
+.w-photo-gallery {
+    height: 100%;
+}
+
+.w-grid-gallery {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.w-grid-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.w-grid-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* Weather page Style */
+
+#weatherMap {
+    height: 70vh; 
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .w-row {
+        justify-content: flex-start; /* Aligns cards to the left on smaller screens */
+    }
+    
+    .w-card {
+        flex: 1 1 100%; /* Makes cards full-width on small screens */
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 50%;
+        padding: 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+    footer{
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+    }
+    footer p {
+        margin: 0px;
+    }
+}
