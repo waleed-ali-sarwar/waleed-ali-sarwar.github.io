@@ -58,7 +58,7 @@
        // typing Effect javascript
        const texts = [
            "I am a Fullstack Web Developer",
-           "Undergraduate Student",
+           "Bioinformatics Student",
            "I am a problem solver",
            "I love Coding"
        ];
