@@ -12,7 +12,12 @@ background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(0,0,116,1) 45%, rgba
     background-color: transparent;
     margin: 0 10px;
 }
-
+#w-logo{
+    width: 50px;
+}
+.w-logo-footer{
+    width: 100px;
+}
 .was-btn-outline-primary:hover {
     color: #fff;
     border-radius: 10px;

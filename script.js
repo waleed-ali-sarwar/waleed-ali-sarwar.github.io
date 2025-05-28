@@ -59,7 +59,7 @@
        const texts = [
            "I am a Fullstack Web Developer",
            "Bioinformatics Student",
-           "I am a problem solver",
+           "Problem solver",
            "I love Coding"
        ];
        let textIndex = 0;
