@@ -66,12 +66,11 @@ header {
     width: 40%;
 }
 
-button {
+#readmore {
     border: none;
     background-color: black;
     color: white;
     padding: 15px;
-    cursor: pointer;
 }
 
 .w-card-container {
