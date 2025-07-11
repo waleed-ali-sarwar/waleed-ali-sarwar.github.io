@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:description" content="Comparison Products">
+    <meta name="keywords" content="comparison, products, features">
+    <title>Laptop Comparison</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Montserrat", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 32px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .w-container {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+
+        .w-row {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .w-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            padding: 24px 20px 20px 20px;
+            text-align: center;
+            min-width: 270px;
+            max-width: 340px;
+            position: relative;
+            border: 3px solid transparent;
+            transition: box-shadow 0.2s;
+        }
+
+        .w-card img {
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 16px;
+
+        }
+
+        .w-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .brand {
+            color: #888;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        .price {
+            font-size: 1.1em;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #1a7f37;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto 14px auto;
+        }
+
+        .spec-table td {
+            padding: 6px 8px;
+            font-size: 0.98em;
+        }
+
+        .spec-table tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        /* Highlight best laptop */
+        .best {
+            border: 3px solid #ff9800;
+            box-shadow: 0 4px 16px rgba(255, 152, 0, 0.10);
+            animation: animate-box 1.5s infinite ease-in-out;
+        }
+
+        @keyframes animate-box {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+        .ribbon {
+            position: absolute;
+            top: 18px;
+            left: -18px;
+            background: #ff9800;
+            color: #fff;
+            padding: 4px 18px;
+            font-size: 0.95em;
+            font-weight: 700;
+            transform: rotate(-18deg);
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(255, 152, 0, 0.15);
+            z-index: 2;
+        }
+
+        .learn-more {
+            position: absolute;
+            right: 0;
+            margin: 2px;
+            padding: 0px 12px;
+            top: 0px;
+            font-weight: 500;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            /* border: #1a7f37 solid 1px; */
+        }
+
+        .learn-more a {
+            text-decoration: none;
+            color: #1a7f37;
+
+        }
+
+        .learn-more:hover,
+        a:hover {
+            text-decoration: underline;
+            font-style: oblique;
+        }
+
+        @media (max-width: 900px) {
+            .w-row {
+                gap: 16px;
+            }
+
+            .w-card {
+                min-width: 220px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .w-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .w-card {
+                width: 100%;
+                margin-bottom: 18px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Find Your Perfect Laptop</h2>
+        <div class="w-container">
+            <div class="w-row">
+                <!-- Laptop 1 -->
+                <div class="w-card">
+                    <div class="learn-more">
+                        <a href="https://www.daraz.pk/products/hp-16-d0023dx-11th-i5-11400h-8gb-ddr4-256gb-ssd-nvidia-rtx3050-4gb-161-fhd-ips-11-i431534347-s2057532656.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Ahp%253Bnid%253A431534347%253Bsrc%253ALazadaMainSrp%253Brn%253A76cfa150bbeaca11ac022e2ff82c650e%253Bregion%253Apk%253Bsku%253A431534347_PK%253Bprice%253A250000%253Bclient%253Adesktop%253Bsupplier_id%253A6005066277166%253Bbiz_source%253Ahttps%253A%252F%252Fwww.daraz.pk%252F%253Bslot%253A11%253Butlog_bucket_id%253A470687%253Basc_category_id%253A20000186%253Bitem_id%253A431534347%253Bsku_id%253A2057532656%253Bshop_id%253A1352423%253BtemplateInfo%253A1103_L%2523-1_A3_C%2523&freeshipping=0&fs_ab=1&fuse_fs=&lang=en&location=Punjab&price=2.5E%205&priceCompare=skuId%3A2057532656%3Bsource%3Alazada-search-voucher%3Bsn%3A76cfa150bbeaca11ac022e2ff82c650e%3BoriginPrice%3A25000000%3BdisplayPrice%3A25000000%3BsinglePromotionId%3A-1%3BsingleToolCode%3A-1%3BvoucherPricePlugin%3A0%3Btimestamp%3A1751266475849&ratingscore=5.0&request_id=76cfa150bbeaca11ac022e2ff82c650e&review=1&sale=2&search=1&source=search&spm=a2a0e.searchlist.list.11&stock=1"
+                            target="_blank" aria-label="Learn more about HP Victus 16-D0023DX">
+                            Learn More
+                        </a>
+                    </div>
+                    <img src="./assets/l1.png" alt="Laptop A">
+                    <h3>16-D0023DX <span class="brand">HP Victus</span></h3>
+                    <div class="price">PKR. 250,000</div>
+                    <table class="spec-table">
+                        <tr>
+                            <td><strong>RAM</strong></td>
+                            <td>8GB DDR4</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Storage</strong></td>
+                            <td>256GB SSD</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery Life</strong></td>
+                            <td>7 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Processor</strong></td>
+                            <td>11th Gen i5-11400H</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Screen Size</strong></td>
+                            <td>16.1" IPS</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Laptop 2 (Best) -->
+                <div class="w-card best">
+                    <div class="learn-more">
+                        <a href="https://www.daraz.pk/products/500e-2-n3450-4gb-ddr4-32gb-116-os-i877119979-s3879369808.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Alenovo%252Blaptop%253Bnid%253A877119979%253Bsrc%253ALazadaMainSrp%253Brn%253Ad7bc18988ce060ed5ea3e31f5ad859ae%253Bregion%253Apk%253Bsku%253A877119979_PK%253Bprice%253A15999%253Bclient%253Adesktop%253Bsupplier_id%253A6005014515062%253Bbiz_source%253Ah5_external%253Bslot%253A31%253Butlog_bucket_id%253A470687%253Basc_category_id%253A20000411%253Bitem_id%253A877119979%253Bsku_id%253A3879369808%253Bshop_id%253A703343%253BtemplateInfo%253A-1_A3_C%25231103_L%2523&freeshipping=0&fs_ab=1&fuse_fs=&lang=en&location=Sindh&price=15999&priceCompare=skuId%3A3879369808%3Bsource%3Alazada-search-voucher%3Bsn%3Ad7bc18988ce060ed5ea3e31f5ad859ae%3BoriginPrice%3A1599900%3BdisplayPrice%3A1599900%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1751274454563&ratingscore=&request_id=d7bc18988ce060ed5ea3e31f5ad859ae&review=&sale=1&search=1&source=search&spm=a2a0e.searchlist.list.31&stock=1"
+                            target="_blank" aria-label="Learn more about ChromeBook 500E Lenovo">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="ribbon">Best Value</div>
+                    <img src="./assets/l2.png" alt="Laptop B">
+                    <h3>ChromeBook 500E<span class="brand"> Lenovo</span></h3>
+                    <div class="price">PKR. 15,999</div>
+                    <table class="spec-table">
+                        <tr>
+                            <td><strong>RAM</strong></td>
+                            <td>4GB DDR2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Storage</strong></td>
+                            <td>1TB SSD</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery Life</strong></td>
+                            <td>10 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Processor</strong></td>
+                            <td>2nd Gen Intel N3450</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Screen Size</strong></td>
+                            <td>15.6" Touch Screen</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Laptop 3 -->
+                <div class="w-card">
+                    <div class="learn-more">
+                        <a href="https://www.daraz.pk/products/neo-16-phn16-72-93af-14th-i9-14900hx-16gb-ddr5-1tb-ssd-nvidia-rtx-4070-8gb-16-wqxga-ips-240hz-11-2-i556885010-s2582296224.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Aasus%252Blaptop%253Bnid%253A556885010%253Bsrc%253ALazadaMainSrp%253Brn%253Ae3a39b9e868aec0b87edbd112d791bea%253Bregion%253Apk%253Bsku%253A556885010_PK%253Bprice%253A524999%253Bclient%253Adesktop%253Bsupplier_id%253A6005044626772%253Bbiz_source%253Ah5_external%253Bslot%253A34%253Butlog_bucket_id%253A470687%253Basc_category_id%253A57%253Bitem_id%253A556885010%253Bsku_id%253A2582296224%253Bshop_id%253A1122874%253BtemplateInfo%253A1103_L%2523-1_A3_C%2523&freeshipping=1&fs_ab=1&fuse_fs=&lang=en&location=Sindh&price=524999&priceCompare=skuId%3A2582296224%3Bsource%3Alazada-search-voucher%3Bsn%3Ae3a39b9e868aec0b87edbd112d791bea%3BoriginPrice%3A52499900%3BdisplayPrice%3A52499900%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1751266618361&ratingscore=&request_id=e3a39b9e868aec0b87edbd112d791bea&review=&sale=0&search=1&source=search&spm=a2a0e.searchlist.list.34&stock=1"
+                            target="_blank" aria-label="Learn more about Helios Neo 16 Acer Predator">
+                            Learn More
+                        </a>
+                    </div>
+                    <img src="./assets/l3.png" alt="Laptop C">
+                    <h3>Helios Neo 16 <span class="brand"> Acer Predator</span></h3>
+                    <div class="price">PKR. 524,999</div>
+                    <table class="spec-table">
+                        <tr>
+                            <td><strong>RAM</strong></td>
+                            <td>8GB DDR5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Storage</strong></td>
+                            <td>2TB SSD</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery Life</strong></td>
+                            <td>8 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Processor</strong></td>
+                            <td>14th Gen i9-14900HX</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Screen Size</strong></td>
+                            <td>17" 4K UHD</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

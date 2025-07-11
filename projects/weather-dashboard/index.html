@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Dashboard - Your go-to source for weather updates and forecasts.">
+    <meta name="keywords" content="weather, dashboard, forecast, updates">
+    <meta name="theme-color" content="#4CAF50">
+    <title>Weather Dashboard</title>
+    <link type="image/png" sizes="120x120" rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="
+    https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js
+    "></script>
+    <script src="./lib/weather_api.js"></script>
+    <script src="./lib/clock.js"></script>
+</head>
+
+
+<body>
+    <div id="w-loading">
+        <div class="w-spinner"></div>
+    </div>
+    <header>
+        <h1><i class='bx bx-cloud'></i> Weather Dashboard</h1>
+        <h3><span id="digital-clock"></span></h3>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city name...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="blog.html"><i class='bx bxl-blogger'></i> Blog</a></li>
+                <li><a href="maps.html"><i class='bx bx-map'></i> Maps</a></li>
+                <li><a href="photos.html"><i class='bx bx-image-add'></i> Photos</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-content">
+            <div class="w-content">
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="w-content">
+                <div class="w-row">
+                    <div class="w-grid">
+                        <!-- Hourly Forecast -->
+                        <div class="hourly-forecast">
+                            <h2>Hourly Weather Forecast for Pakistan</h2>
+                            <canvas id="weatherChart" width="600px"></canvas>
+                        </div>
+
+                        <!-- Daily Forecast -->
+                        <div class="daily-forecast">
+                            <div class="w-accordion" id="w-weatherAccordion"></div>
+                        </div>
+                        <div id="searched-weather-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-content">
+                <h2>Recent Weather</h2>
+                <div class="w-row" id="w_row"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Weather Dashboard. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

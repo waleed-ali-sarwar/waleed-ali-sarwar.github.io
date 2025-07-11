@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Carbon Design System CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+    <!-- Carbon Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/@carbon/icons/css/icons.min.css">
+    <style>
+        /* Ensure header is visible and properly positioned */
+        .bx--header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: #161616;
+            border-bottom: 1px solid #393939;
+        }
+
+        .bx--content {
+            margin-top: 3rem;
+            /* Add top margin to account for fixed header */
+        }
+
+        .bx--header__name {
+            color: #f4f4f4;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 0 1rem;
+            line-height: 3rem;
+        }
+
+        .bx--header__name--prefix {
+            font-weight: 400;
+        }
+
+        /* Product Cards Styling */
+        .product-card {
+            height: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .product-image {
+            width: 160px;
+            object-fit: cover;
+        }
+
+        
+
+        .product-table {
+            margin-top: 1rem;
+        }
+
+        .product-button {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bx--body">
+    <!-- Carbon Header -->
+    <header class="bx--header" role="banner">
+        <div class="bx--header__name">
+            <span class="bx--header__name--prefix">
+                Waleed Tech
+            </span>
+            Store
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bx--content">
+        <div class="bx--grid">
+            <div class="bx--row">
+                <div class="bx--col">
+                    <h1 class="bx--type-productive-heading-05">Products</h1>
+                    <p class="bx--type-body-long-01">Best laptops in Store. Compare the best.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Cards Section -->
+        <section class="bx--grid bx--grid--full-width">
+            <div class="bx--row">
+                <!-- Product 1 -->
+                <div class="bx--col-lg-4 bx--col-md-6 bx--col-sm-4">
+                    <div class="bx--tile bx--tile--clickable product-card">
+                        <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
+                            <div class="bx--aspect-ratio--object">
+                                <img src="./assets/l1.png" alt="HP Laptop" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="bx--type-productive-heading-03">HP Gaming Laptop</h3>
+                            <div class="bx--data-table-container product-table">
+                                <table class="bx--data-table bx--data-table--compact">
+                                    <tbody>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Brand</td>
+                                            <td>HP</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">RAM</td>
+                                            <td>12GB DDR4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Processor</td>
+                                            <td>12th Gen i9 12002HX</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Graphics</td>
+                                            <td>Dedicated Graphics</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Size</td>
+                                            <td>16.1" IPS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Battery</td>
+                                            <td>4000 MAH 6 Hours</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="bx--btn bx--btn--primary product-button">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bx--col-lg-4 bx--col-md-6 bx--col-sm-4">
+                    <div class="bx--tile bx--tile--clickable product-card">
+                        <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
+                            <div class="bx--aspect-ratio--object">
+                                <img src="./assets/l2.png" alt="Dell Laptop" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="bx--type-productive-heading-03">Dell Professional Laptop</h3>
+                            <div class="bx--data-table-container product-table">
+                                <table class="bx--data-table bx--data-table--compact">
+                                    <tbody>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Brand</td>
+                                            <td>Dell</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">RAM</td>
+                                            <td>16GB DDR4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Processor</td>
+                                            <td>12th Gen i7 12700H</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Graphics</td>
+                                            <td>Integrated Graphics</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Size</td>
+                                            <td>14" FHD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Battery</td>
+                                            <td>5000 MAH 8 Hours</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="bx--btn bx--btn--primary product-button">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bx--col-lg-4 bx--col-md-6 bx--col-sm-4">
+                    <div class="bx--tile bx--tile--clickable product-card">
+                        <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
+                            <div class="bx--aspect-ratio--object">
+                                <img src="./assets/l3.png" alt="Lenovo Laptop" class="product-image">
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="bx--type-productive-heading-03">Lenovo ThinkPad</h3>
+                            <div class="bx--data-table-container product-table">
+                                <table class="bx--data-table bx--data-table--compact">
+                                    <tbody>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Brand</td>
+                                            <td>Lenovo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">RAM</td>
+                                            <td>8GB DDR4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Processor</td>
+                                            <td>11th Gen i5 1135G7</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Graphics</td>
+                                            <td>Integrated Graphics</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Size</td>
+                                            <td>13.3" FHD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bx--table-column-menu">Battery</td>
+                                            <td>4500 MAH 10 Hours</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="bx--btn bx--btn--primary product-button">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carbon Design System JavaScript -->
+    <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+</body>
+
+</html>
