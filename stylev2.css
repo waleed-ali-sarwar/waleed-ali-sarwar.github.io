@@ -17,16 +17,17 @@ body {
 /* 📌 Fixed Header */
 header {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     padding: 15px;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 nav {
-    width: 90%;
+    width: 100%;
     display: flex;
 }
 
@@ -64,21 +65,18 @@ header nav a:hover {
     justify-content: flex-end;
 }
 
-/* 🎯 Sections (Global) */
+/* Sections (Global) */
 section {
     width: 100%;
     height: 100vh;
-    z-index: 900;
 }
 
-/* ✨ Hero Section */
+/* Hero Section */
 #w-hero-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
     background-color: #fff;
     font-family: "MuseoModerno", sans-serif;
 }
@@ -125,11 +123,24 @@ section {
     color: black;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    background: #FFFFFF;
+    clip-path: polygon(59% 0, 86% 100%, 0% 100%, 0 47%, 0% 0%);
+    color: black;
+}
+
+
+
 /* 🏷️ Section Headers */
 #w-about-section h1,
 #w-education-section h1,
 #w-skills-section h1,
-#w-projects-section h1 {
+#w-projects-section h1,
+#w-contact-section h1 {
     font-size: 50px;
     text-align: right;
     color: #fff;
@@ -137,16 +148,43 @@ section {
     padding: 50px 50px 0 0;
     background: linear-gradient(124deg, #fff 53%, #11006a 53%);
 }
+
+/* About us styling */
+
+
+.about-content-items {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 100px;
+}
+
+#about-description {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+#linkedin-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #1C2078;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#linkedin-btn:hover {
+    background-color: #444CF5;
+}
+
 /* // mobile query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
 
-}
 /* Tablet (768px – 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
- 
-}
-/* Desktop (>1024px) */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
 
-    
-}
+/* Desktop (>1024px) */
+@media screen and (min-width: 1025px) {}
