@@ -140,12 +140,13 @@ footer {
 #w-education-section h1,
 #w-skills-section h1,
 #w-projects-section h1,
+#w-projects-education h1,
 #w-contact-section h1 {
     font-size: 50px;
     text-align: right;
     color: #fff;
     margin: 0;
-    padding: 50px 50px 0 0;
+    padding: 20px 40px;
     background: linear-gradient(124deg, #fff 53%, #11006a 53%);
 }
 
@@ -180,8 +181,66 @@ footer {
     background-color: #444CF5;
 }
 
+
+
+.edu-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.edu-box {
+    padding: 25px;
+    background-color: #1C2078;
+    border-radius: 25px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.edu-box:hover {
+    border: 1px solid #1C2078;
+    background-color: #fff;
+    color: #1C2078;
+    transform: translateY(5px);
+}
+
+.edu-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.edu-box p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+#w-mobile-error-section {
+    display: none;
+}
+
 /* // mobile query */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 786px) {
+    #w-mobile-error-section {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1C2078;
+        color: #fff;
+        z-index: 1000;
+    }
+    #w-mobile-error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
 
 /* Tablet (768px – 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {}
