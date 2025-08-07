@@ -98,12 +98,11 @@ section {
     line-height: 120px;
 }
 
-/* 🖼️ Hero Image */
+/* Hero Image */
 #w-img {
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     background: url('assets/bg.jpg') center/cover no-repeat;
-    background-clip: content-box;
 }
 
 /* 📚 Sticky Sections */
@@ -233,12 +232,13 @@ footer {
         color: #fff;
         z-index: 1000;
     }
+
     #w-mobile-error {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        height: 100vh;
     }
 }
 
