@@ -221,6 +221,7 @@ footer {
     display: none;
 }
 
+
 /* // mobile query */
 @media screen and (max-width: 786px) {
     #w-mobile-error-section {
